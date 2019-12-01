@@ -1,0 +1,16 @@
+﻿@model Loja.Models.Usuario
+
+@{
+	ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+
+@using (Html.BeginForm("UsuarioAdicionado", "Home", FormMethod.Post))
+{
+	@Html.TextBoxFor(m => m.Nome)
+	@Html.TextBoxFor(m => m.Funcao)
+	<button>Enviar</button>
+}
+
